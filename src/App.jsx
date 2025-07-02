@@ -17,10 +17,25 @@ import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <>
-      {/* <Home/> */}
-      <AboutDepartment/>
-      //Hello 
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} >
+      <Route path="/department" element={<AboutDepartment />} />
+      </Route>
+      <Route path="/about" element={<About />} />
+      <Route path="/schemes" element={<Schemes />} />
+      <Route path="/notifications" element={<Notifications />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/about/department" element={<AboutDepartment />} />
+      <Route path="/about/statistics" element={<AboutStatistics />} />
+      <Route path="/notifications/acts" element={<NotificationsActs />} />
+      <Route path="/notifications/notification" element={<NotificationsNotification />} />
+      <Route path="/schemes/central" element={<SchemesCentral />} />
+      <Route path="/schemes/state" element={<SchemesState />} />
+      <Route path="/policies" element={<Policies />} />
+      <Route path="/media" element={<MediaGallery />} />
+      <Route path="/contact" element={<ContactUs />} />
+    </Routes>
+        </>
   );
 }
 
