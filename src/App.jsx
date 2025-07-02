@@ -4,8 +4,8 @@ import Home from './website/HomePage/Home';
 function App() {
   return (
     <>
-      {/* <Home/> */}
-      <AboutDepartment/>
+      <Home/>
+      {/* <AboutDepartment/> */}
       //Hello 
     </>
   );
